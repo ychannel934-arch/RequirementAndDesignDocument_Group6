@@ -66,3 +66,38 @@ The library needs to build an online library management system to support book b
 + When a reservation is canceled.
 -	Notifications are sent either via email or postal mail, depending on member preferences.
 -	These notifications help members manage their borrowing activities efficiently and avoid fines.
+## II.	Non-functional Requirements
+### 1.	Usability
+-	The system must be used for its intended purpose.
+-	Friendly and easy-to-use system interface.
+-	System access should be quickly and easy.
+### 2.	Realiability
+-	Information on the system must be authentic and trustworthy by users.
+-	In case of system downtime, the system must ensure 99,9% recovery within 24 hours.
+### 3.	Performance
+-	The maximum time allowed for query results to be returned in the system is 10 seconds.
+-	The time to process user requests with the system(add, edit, delete…)is 5 seconds.
+-	The system load capacity when many people access it must ensure normal operation.
+### 4.	Supportibility
+-	The system needs to support remote maintenance and updates without shutting down the entire system.
+-	Components such as the database, server and user interface must be designed so that they can be maintained independently when needed.
+### 5.	Security
+-	The stored information must be strictly protected by the system to prevent information leakage to the outside.
+-	The system must have data backup to avoid data los in case of problems and be able to restore data faster.
+-	User accounts and passwords installed in the system must be highly secure and changed periodically. 
+-	Passwords must be encrypted and not allowed to be copies.Authentication is required when accesing data.
+### 6.	Design Constraints
+-	The Library Management System must be developed using ưeb-based tecnologies(Python, C++…)
+-	The system database must use MySQL or PostgreSQL.
+-	The design must follow client-server architecture and support at least Google Chrome browsers.
+## III.	Use Case Diagram
+### 1.	Overview Diagram
+#### 1.1.	 Danh sách các Actor
+| STT | Actor     | Meaning                                                                 |
+|------|-----------|-------------------------------------------------------------------------|
+| 1 | Guest | Guests and users who have not logged into the system. |
+| 2 | Member | Members, users who have an account and have logged into the system. |
+| 3 | Librarian | Librarian is a library manager. |
+| 4 | System | The system automatically processes notifications, updates, and sends reminders. |
+
+
