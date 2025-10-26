@@ -87,6 +87,7 @@ The library needs to build an online library management system to support book b
 -	User accounts and passwords installed in the system must be highly secure and changed periodically. 
 -	Passwords must be encrypted and not allowed to be copies.Authentication is required when accesing data.
 ### 6.	Design Constraints
+- System architecture diagrams and conceptual models must be designed using draw.io to ensure standardized and easily maintainable visual representations.
 -	The Library Management System must be developed using web-based tecnologies(Python, C++…)
 -	The system database must use MySQL or PostgreSQL.
 -	The design must follow client-server architecture and support at least Google Chrome browsers.
