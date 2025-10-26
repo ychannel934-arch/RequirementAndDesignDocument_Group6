@@ -92,12 +92,29 @@ The library needs to build an online library management system to support book b
 -	The design must follow client-server architecture and support at least Google Chrome browsers.
 ## III.	Use Case Diagram
 ### 1.	Overview Diagram
-#### 1.1.	 Danh sách các Actor
-| STT | Actor     | Meaning                                                                 |
+#### 1.1.	 List of Actor
+
+| No. | Actor     | Meaning                                                                 |
 |------|-----------|-------------------------------------------------------------------------|
 | 1 | Guest | Guests and users who have not logged into the system. |
 | 2 | Member | Members, users who have an account and have logged into the system. |
 | 3 | Librarian | Librarian is a library manager. |
 | 4 | System | The system automatically processes notifications, updates, and sends reminders. |
+#### 1.2.	List of Use-cases
 
+| No. | Use case | Meaning |
+|------|-----------|----------|
+| 1 | View catalog | Users view detailed information. |
+| 2 | Search catalog | Users browse the overall catalog. |
+| 3 | Register | A new user creates an account in the library system. |
+| 4 | Renew book | Users extend the borrowing period of a book if it has not been reserved by another user. |
+| 5 | Reserve book | Users reserve a book that is currently borrowed by someone else. |
+| 6 | Return book | Used to return borrowed books to the library once the borrowing period ends. |
+| 7 | Check out book | The librarian lends a book to a registered member. |
+| 8 | Issue book | The process of issuing or approving a borrowing request after verifying book availability and member status. |
+| 9 | Update book | The librarian maintains the book database. |
+| 10 | Manage member | Enables the librarian to manage all member records. |
+| 11 | Send Overdue Notification | Automatically notifies members who have not returned borrowed books by the due date. |
+| 12 | Send Reservation Available Notification | When a reserved book becomes available, the system sends a notification to the member who placed the reservation. |
+| 13 | Send Reservation Canceled Notification | Notifies members when a book reservation is canceled—either by the user, librarian, or system. |
 
